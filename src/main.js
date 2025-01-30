@@ -1,0 +1,24 @@
+import './assets/main.css'
+import '@mdi/font/css/materialdesignicons.css'
+
+import { createApp } from 'vue'
+import App from './App.vue'
+
+// Vuetify
+import 'vuetify/styles'
+import { createVuetify } from 'vuetify'
+import * as components from 'vuetify/components'
+import * as directives from 'vuetify/directives'
+
+
+//headers.append('Access-Control-Allow-Origin', 'http://10.0.0.96/');
+//headers.append('Access-Control-Allow-Credentials', 'true');
+
+const vuetify = createVuetify({
+    components,
+    directives,
+  })
+
+createApp(App).use(vuetify).mount('#app')
+
+
